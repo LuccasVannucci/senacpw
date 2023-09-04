@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>HOTEL ÁGUA BRANCA</title>
+    <meta name="description" content="Site criado com o intuito de ser um método fácil para a reserva do nosso hotel fictício">
+   
+</head>
+<body>
+    <div class="menu-wrapper">
+        <!-- Conteúdo do menu aqui -->
+    </div>
+
+    <div class="navbar" role="banner">
+        <div class="container">
+            <div class="nav-wrapper">
+                    <img src="C:\Users\Pichau\Downloads\hotel\logotipo.png" alt="Acme Outdoors Logo">
+                </a>
+                <div class="cart-nav-wrapper">
+                    <nav role="navigation" class="nav-menu w-nav-menu">
+                        <a href="C:\Users\Pichau\Downloads\hotel\logotipo.png" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+                        <a href="https://biznus-template.webflow.io/about" class="nav-link w-nav-link">Sobre</a>
+                        <a href="https://biznus-template.webflow.io/shop" class="nav-link w-nav-link">Reserva</a>
+                        <a href="https://biznus-template.webflow.io/donations" class="nav-link w-nav-link">Passeios</a>
+                        <a href="https://biznus-template.webflow.io/contact" class="nav-link w-nav-link">Contato</a>
+                    </nav>
+                    <!-- Conteúdo do carrinho de compras aqui -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-section">
+      <h1 class="hero-heading">HOTEL ÁGUA BRANCA</h1>
+      <p class="hero-paragraph">O nosso hotel é o lugar perfeito para quem busca conforto, tranquilidade e sofisticação.</p>
+      <p class="hero-paragraph">Nossos quartos espaçosos e elegantes oferecem as melhores comodidades para uma estadia inesquecível.</p>
+      <a href="#" class="btn">SAIBA MAIS</a>
+  </div>
+  
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+     <p>Tudo do melhor para você e a sua família</p>
+    </div>
+
+    <!-- Mais seções e conteúdo aqui -->
+
+    <footer class="footer">
+        <!-- Conteúdo do rodapé aqui -->
+    </footer>
+</body>
+</html>
