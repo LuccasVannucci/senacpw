@@ -1,0 +1,98 @@
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #1a2b2d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para o título */
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Estilos para o formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+/* Estilos para os rótulos e campos de entrada */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    margin: 0px;
+    height: 90%;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:hover{
+    background-color: whitesmoke;
+}
+input[type="submit"] {
+    background-color: #0d1c1b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #23544f;}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.reserva {
+    padding: 10px;
+    height: 100px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

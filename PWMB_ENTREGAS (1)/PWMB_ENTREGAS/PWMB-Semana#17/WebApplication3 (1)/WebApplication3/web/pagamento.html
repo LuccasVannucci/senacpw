@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento de Reserva de Hotel</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Formas de pagamento</h1>
+        <form>
+            <a class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </a>
+            <a class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </a>
+            <a class="form-group">
+                <label for="quartos">Número de Quartos:</label>
+                <input type="number" id="quartos" name="quartos" required>
+            </a>
+            <a class="form-group">
+                <label for="total">Total a Pagar:</label>
+                <input type="text" id="total" name="total" readonly>
+            </a>
+            <a class="form-group">
+                <label for="pagamento">Método de Pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="cartaod">Cartão de débito</option>
+                    <option value="pix">pix</option>
+                </select>
+            </a>
+            <button type="submit" class="btn">Pagar</button>
+        </form>
+    </main>
+</body>
+</html>
+

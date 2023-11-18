@@ -1,0 +1,29 @@
+body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://worldofprintables.com/wp-content/uploads/2023/07/Landscape-Abstract-Wallpaper.jpg');
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        }
+
+        header {
+            background-color: #1a2b2d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        
+        iframe{
+            align-content: center;
+            padding: 0px;
+        }
+
+        

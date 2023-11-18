@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css"/>
+    <title>Reserva de Hotel</title>
+  
+</head>
+<body>
+    <header>
+        <h1>Reserva de Hotel</h1>
+    </header>
+    <main class="container">
+        <h2>Preencha o formulário de reserva</h2>
+        <form action="reserva.jsp" method="POST">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" name="cpf" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="data_checkin">Data de Check-In:</label>
+            <input type="date" id="data_checkin" name="data_checkin" required>
+            
+            <label for="data_checkout">Data de Check-Out:</label>
+            <input type="date" id="data_checkout" name="data_checkout" required>
+            
+            <label for="tipo_quarto">Tipo de Quarto:</label>
+            <select id="tipo_quarto" name="tipo_quarto" required>
+                <option value="standard">Standard - diária: 50R$</option>
+                <option value="luxo">Luxo - diária: 70R$</option>
+                <option value="suite">Suíte - diária: 100R$</option>
+            </select>
+            <p><strong>Total da Estadia:</strong> <span id="total_estadia">0R$</span></p>
+            <label for="Quantidade_de_pessoas">Quantidade de pessoas:</label>
+            <input type="number" id="pessoas" name="pessoas" required>
+            
+            <button type="submit">Enviar Reserva</button>
+        </form>
+        
+    <script>
+      // Função para calcular o total da estadia
+    function calcularTotalEstadia() {
+        const checkinDate = new Date(document.getElementById("data_checkin").value);
+        const checkoutDate = new Date(document.getElementById("data_checkout").value);
+        const tipoQuarto = document.getElementById("tipo_quarto").value;
+
+        if (checkinDate > checkoutDate) {
+            document.getElementById("total_estadia").textContent = "Data de check-out deve ser após a data de check-in";
+        } else {
+            const diffTime = Math.abs(checkoutDate - checkinDate);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            
+            let diaria = 0;
+            if (tipoQuarto === "standard") {
+                diaria = 50;
+            } else if (tipoQuarto === "luxo") {
+                diaria = 70;
+            } else if (tipoQuarto === "suite") {
+                diaria = 100;
+            }
+
+            const total = diaria * diffDays;
+            document.getElementById("total_estadia").textContent = total + "R$";
+        }
+    }
+
+    // Adicionar evento de input aos campos de data
+    document.getElementById("data_checkin").addEventListener("input", calcularTotalEstadia);
+    document.getElementById("data_checkout").addEventListener("input", calcularTotalEstadia);
+    document.getElementById("tipo_quarto").addEventListener("change", calcularTotalEstadia);
+
+    // Inicialmente, calcule o total
+    calcularTotalEstadia();
+    const reservaForm = document.getElementById('reserva');
+    const checkinInput = document.getElementById('data_checkin');
+    const checkoutInput = document.getElementById('data_checkout');
+    
+    const hoje = new Date();
+    const anoAtual = hoje.getFullYear();
+    const mesAtual = hoje.getMonth() + 1; // Os meses em JavaScript são zero-indexed, então adicionamos 1.
+
+    checkinInput.addEventListener('input', () => {
+      const checkinDate = new Date(checkinInput.value);
+      const checkoutDate = new Date(checkoutInput.value);
+      
+      if (checkinDate < hoje) {
+        alert('Você não pode selecionar uma data de check-in anterior ao mês e ano atual.');
+        checkinInput.value = '';
+      }
+      
+      if (checkoutDate < checkinDate) {
+        alert('A data de check-out não pode ser anterior à data de check-in.');
+        checkoutInput.value = '';
+      }
+    });
+
+    checkoutInput.addEventListener('input', () => {
+      const checkinDate = new Date(checkinInput.value);
+      const checkoutDate = new Date(checkoutInput.value);
+      
+      if (checkoutDate < checkinDate) {
+        alert('A data de check-out não pode ser anterior à data de check-in.');
+        checkoutInput.value = '';
+      }
+    });
+  </script>
+    </main>
+   
+    <footer>&copy; 2023 Hotel Água Branca</footer>
+</body>
+</html>

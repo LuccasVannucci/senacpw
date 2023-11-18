@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Noto+Sans+Pau+Cin+Hau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dela+Gothic+One&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Inconsolata:wght@300&family=Libre+Baskerville&family=Noto+Sans+Pau+Cin+Hau&family=Rubik:wght@300&display=swap');
+body {
+    background-image: url('https://cdn.dribbble.com/userupload/3175794/file/original-4c87e706fecac656273bf3e2401b3caa.gif');
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Alterado para a fonte 'Exo 2' */
+    color: black;
+    text-align: center; /* Centraliza o conteúdo no corpo da página */
+    margin: 0; /* Remove margens padrão do corpo da página */
+}
+
+header {
+    background-color: #1a2b2d;
+    color: white;
+    font-family: 'Young Serif', serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    padding: 20px 0; /* Espaçamento superior e inferior para o cabeçalho */
+    
+}
+
+button {
+    background-color: #233738;
+    color: white;
+    font-family: 'Noto Sans Pau Cin Hau', sans-serif;/* Alterado para a fonte 'Exo 2' */
+    width: auto; /* Largura automática para ajustar ao conteúdo do botão */
+    height: auto;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.2);
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 3px; /* Cantos arredondados no botão */
+    margin: 5px; /* Espaçamento entre os botões */
+    padding: 5px 10px; /* Espaçamento interno do botão */
+}
+
+button:hover {
+    background-color: #3a777a;
+ 
+}
+
+section{
+    font-family: Arial, sans-serif;
+    width: 100%; 
+    height: 90px;
+    padding: 20px 0;
+    color: white;
+    background-color: #183634;
+    text-align: center; 
+    box-sizing: content-box;
+    position: relative; 
+    left: 0; 
+    right: 0; 
+    text-justify: auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    background-color: #b5b4ac;
+    width: auto; 
+    height: auto;
+    padding: 0;
+    color:black;
+    align-content: end;
+    position: absolute;
+    bottom: 0;
+    
+}

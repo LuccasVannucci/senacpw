@@ -1,0 +1,86 @@
+ @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Noto+Sans+Pau+Cin+Hau&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Inconsolata:wght@300&family=Noto+Sans+Pau+Cin+Hau&family=Rubik:wght@300&display=swap');
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            font-family: 'Rubik', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Noto Sans Pau Cin Hau', sans-serif;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+           
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        img{
+            align-content: center;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            width: 300px;
+            height: 300px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            display: block;
+        }
+
+        .navbar img {
+            max-width: 100px;
+            height: auto;
+        }
+        footer{
+    background-color: whitesmoke;
+    width: auto; 
+    height: auto;
+    padding: 5px 10px;
+    color:black;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+        }
+         
+
+
